@@ -14,11 +14,11 @@ class SudokuBoard {
     let yo = 10;
     let xf = xo + this.L;
     let yf = yo + this.L;
-    let dl = this.L/this.N;
+    let dl = this.L/(this.N+1);
     let x = xo;
     let y = yo;
     
-    for (let i = 0; i < this.N; ++i) {
+    for (let i = 0; i <= this.N; ++i) {
       stroke(100);
       strokeWeight(1);
       if (this.minors && i%this.n==0) {
