@@ -10,13 +10,13 @@ class SudokuBoard {
   
   draw() {
     // Draw grid
-    xo = 10;
-    yo = 10;
-    xf = xo + this.L;
-    yf = yo + this.L;
-    dl = w/this.N;
-    x = xo;
-    y = yo;
+    let xo = 10;
+    let yo = 10;
+    let xf = xo + this.L;
+    let yf = yo + this.L;
+    let dl = w/this.N;
+    let x = xo;
+    let y = yo;
     
     for (let i = 0; i < this.N; ++i) {
       stroke(100);
