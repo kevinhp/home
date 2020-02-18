@@ -1,3 +1,5 @@
+grid = new SudokuBoard(9,3);
+
 
 function setup() {
   createCanvas(displayWidth,displayHeight);
@@ -7,7 +9,7 @@ function draw() {
   background(50);
 }
 
-class SudokuBoard() {
+class SudokuBoard {
   constructor(N,n) {
     this.N = 9;
     this.n = 3;
@@ -35,9 +37,11 @@ class SudokuBoard() {
     y = yo;
     
     for (let i = 0; i < this.N; ++i) {
-      stroke(1);
+      stroke(100);
+      strokeWeight(1);
       if (i%this.n==0) {
-        stroke(2);
+        stroke(0);
+        strokeWeight(2);
       }
       // horizontal line
       line(xo,y,xf,y);
