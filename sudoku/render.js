@@ -14,7 +14,7 @@ class SudokuBoard {
     let yo = 10;
     let xf = xo + this.L;
     let yf = yo + this.L;
-    let dl = this.L/(this.N+1);
+    let dl = this.L/(this.N);
     let x = xo;
     let y = yo;
     
