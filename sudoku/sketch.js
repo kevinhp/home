@@ -6,5 +6,6 @@ function setup() {
 }
 
 function draw() {
-  background(50);
+  background(220);
+  grid.draw();
 }
