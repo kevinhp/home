@@ -14,7 +14,7 @@ class SudokuBoard {
     let yo = 10;
     let xf = xo + this.L;
     let yf = yo + this.L;
-    let dl = w/this.N;
+    let dl = this.L/this.N;
     let x = xo;
     let y = yo;
     
@@ -29,6 +29,8 @@ class SudokuBoard {
       line(xo,y,xf,y);
       // vertical line
       line(x,yo,x,yf);
+      x += dl;
+      y += dl;
     }
   }
   
