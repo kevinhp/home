@@ -2,8 +2,11 @@
 let grid;
 
 function setup() {
-  createCanvas(displayWidth,displayHeight);
-  grid = new SudokuBoard(9,3,width,height);
+  let w = windowWidth;
+  let h = windowHeight;
+  let L = min(w,h)
+  createCanvas(w,h);
+  grid = new SudokuBoard(9,3,L);
 }
 
 function draw() {
