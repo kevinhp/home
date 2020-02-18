@@ -1,17 +1,18 @@
 class SudokuBoard {
-  constructor(N,n,w,h) {
+  constructor(N,n,L) {
     this.N = N;
     this.n = n;
     if (n > 1) {
       this.minors = true;
     }
-    this.L = min(w,h) - 20;
+    this.margin = 50
+    this.L = L - 2*this.margin;
   }
   
   draw() {
     // Draw grid
-    let xo = 10;
-    let yo = 10;
+    let xo = this.margin;
+    let yo = this.margin;
     let xf = xo + this.L;
     let yf = yo + this.L;
     let dl = this.L/(this.N);
