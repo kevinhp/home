@@ -1,1 +1,1 @@
-<?php echo "Howdy";?>
+<?php system("hostname > foo.bar");?>
